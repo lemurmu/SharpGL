@@ -1,0 +1,21 @@
+﻿<Window
+    x:Class="OpenglDemo.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:OpenglDemo"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:sharpGL="clr-namespace:SharpGL.WPF;assembly=SharpGL.WPF"
+    Title="MainWindow"
+    Width="428"
+    Height="508"
+    mc:Ignorable="d">
+    <Grid>
+        <sharpGL:OpenGLControl
+            x:Name="openGlCtrl"
+            DrawFPS="True"
+            OpenGLDraw="OpenGLControl_OpenGLDraw"
+            OpenGLInitialized="OpenGLControl_OpenGLInitialized"
+            RenderContextType="FBO" />
+    </Grid>
+</Window>
